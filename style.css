@@ -1,0 +1,485 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: radial-gradient(#127422, #2ea341, #66e27b, #98ffa9);
+}
+
+header{
+    padding: 10px 0;
+}
+
+.caja{
+    position: relative;
+    margin: 0 auto;
+}
+
+.boton-circular {
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 2% 0 10%; 
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    
+}
+  
+.boton-circular img {
+    width: 100%;
+    height: auto;
+    scale: 150%;
+}
+
+.areatexto{
+    display: flex;
+    position: relative;
+    height: 350px;
+    margin: 10px 0 0 15%;
+}
+
+.texto{
+    box-sizing: border-box;
+    width: 59%;
+    height: 48px;
+    max-height: 350px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    border: none;
+    border-radius: 24px;
+    background: #ffffff;
+    opacity: 70%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    color: #000000;
+}
+
+.areatexto textarea::placeholder{
+    color: #000000;
+} 
+
+.areatexto textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.advertencia{
+    position: relative;
+    display: grid;
+    width: 500px;
+    padding-left: 9%;
+}
+
+.informacion{
+    padding-top: 50px;
+    padding-left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.zonabotones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.08%;
+    margin: 10px 0 35px 15%;
+}
+
+.encriptar{
+    display: flex;
+    justify-content: center;
+    width: 28.46%;
+    height: 67px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background: #014713;
+    border-radius: 24px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);;
+    cursor: pointer;
+}
+
+.encriptar:hover {
+    border: 3px solid #44ee6e;
+  }
+  
+.encriptar:active {
+    background-color: #078126; /* Verde oscuro */
+    scale:calc(90%); /* Mover el botón hacia abajo */
+}
+
+.desencriptar{
+    display: flex;
+    justify-content: center;
+    width: 28.46%;
+    height: 67px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a7131;
+    background: #d8e8da;
+    border: 1px solid #0a7131;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);;
+    cursor: pointer;
+}
+
+.desencriptar:hover {
+    border: 3px solid #0a7131;
+  }
+  
+.desencriptar:active {
+    background-color: #73e280; /* Verde oscuro */
+    scale:calc(90%); /* Mover el botón hacia abajo */
+}
+
+.resultado{
+    display:flex; 
+    box-sizing: border-box;
+    position:absolute;
+    top: 40px;
+    left: 70%;
+    width: 26.5%;
+    height: 530px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    border-radius: 32px;
+}
+
+.munheco{
+    position: absolute;
+    width: 86.57%;
+    height: 261px;
+    left: 6.72%;
+    top: 80px
+}
+
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    position: relative;
+    width: 86.57%;
+    height: 122px;
+    left: 6.72%;
+    top: 373px;
+}
+
+.mensaje1{
+    position: relative;
+    width: 82.51%;
+    height: 50px;
+    left: 8.75%;
+    font-family: Times;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color:#000000; 
+}
+
+.mensaje2{
+    position: relative;
+    width: 82.51%;
+    height: 50px;
+    top: 10px;
+    left: 8.75%;
+    font-family: Times;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color:#495057;
+}
+
+.resultado2{
+    position: absolute;
+    width: 86.57%;
+    height: 122px;
+    left: 6.72%;
+    top: 10px;
+}
+
+.areatexto2{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+.texto2{
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    border: none;
+    border-radius: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+.areatexto2 textarea::placeholder{
+    color: #000000;
+} 
+
+.areatexto2 textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.copiar{
+    width: 60%;
+    height: 67px;
+    padding: 20px;
+    margin: 0 20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a7131;
+    background: #d8e8da;
+    border: 1px solid #0a7131;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.copiar:hover {
+    border: 2px solid #0a7131;
+  }
+  
+.copiar:active {
+    background-color: #73e280; /* Verde oscuro */
+    scale:calc(90%); /* Mover el botón hacia abajo */
+}
+
+footer{
+    background-color: #014713;
+    width: 100%;
+    border-top: 1px solid #000000;
+}
+
+.pie-pagina{
+    padding-block: 10px;
+}
+
+.pie-pagina .grupo-1{
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social{
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display:inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #55a863;
+    text-align: center;
+    transition: all 300ms ease;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: red;
+}
+
+.pie-pagina p{
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width:950px) and (max-height:1400px){
+
+    .boton-circular {
+        margin: 10px 2% 0 20%;  
+    }
+
+    .areatexto{
+        display: flex;
+        margin: 10px 0 0 0;
+    }
+
+    .texto{
+        width: 70%;
+    }
+
+    .advertencia{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .informacion{
+        padding-left: 0;
+    }
+
+    .zonabotones{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 35px 0;
+    }
+
+    .resultado{
+        display: flex;
+        position: relative;
+        width: 60%;
+        height: 500px;
+        margin-bottom: 40px;
+        left: 20%;
+        top: 0;
+    }
+
+    .resultado1{
+        display: flex;
+        width: 100%;
+    }
+
+    .munheco{
+        display: none;
+    }
+
+    .mensajes{
+        position: relative;
+        width: 100%;
+        height: 122px;
+        gap: 30px;
+        left: 0;
+        top: 30%;
+    }
+
+    .mensaje1, .mensaje2{
+        font-size: 35px;
+    }
+
+    .areatexto2, .texto2{
+        height: 400px;
+    }
+
+
+}
+
+@media (max-width:800px){
+
+    .areatexto{
+        display: flex;
+        margin: 10px 0 0 0;
+    }
+
+    .texto{
+        width: 70%;
+    }
+
+    .advertencia{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .informacion{
+        padding-left: 0;
+    }
+
+    .zonabotones{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 35px 0;
+    }
+
+    .resultado{
+        height: 300px;
+    }
+
+    .resultado1{
+        display: flex;
+        width: 100%;
+    }
+
+    .munheco{
+        display: none;
+    }
+
+    .mensajes{
+        top: 25%;
+    }
+
+    .mensaje1, .mensaje2{
+        font-size: 25px;
+    }
+
+    .areatexto2, .texto2{
+        height: 200px;
+    }
+}
+
+@media (max-width:450px){
+    
+    html, body{
+        display: grid;
+        height: 135%;
+        width: fit-content;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .boton-circular {
+        margin: 10px 2% 0 10%; 
+        
+    }
+
+    .texto{
+        width: 80%;
+    }
+
+    .encriptar, .desencriptar{
+        width: 40%;
+    }
+
+    .resultado{
+        width: 80%;
+        height: 300px;
+        left: 10%;
+    }
+
+    .resultado1{
+        display: flex;
+        width: 100%;
+    }
+
+}
